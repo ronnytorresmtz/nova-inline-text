@@ -50,7 +50,9 @@ public function fields()
     return [
         InlineText::make('Name')
             ->inlineOnIndex(function (NovaRequest $request) {
+ 
                 return $request->user()->isAdmin();
+            
             }),
     ];
 }
