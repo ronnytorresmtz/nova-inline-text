@@ -37,7 +37,7 @@ export default {
         )
         .then(
           () => {
-            this.$toasted.show(`${this.field.name} updated to ${this.value.substring(0,20)}...`, {
+            this.$toasted.show(`${this.field.name} updated`, {
               type: 'success',
             });
 
